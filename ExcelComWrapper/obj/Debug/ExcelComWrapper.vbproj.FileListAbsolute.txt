@@ -1,0 +1,11 @@
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\bin\Debug\ExcelComWrapper.dll
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\bin\Debug\ExcelComWrapper.pdb
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\bin\Debug\ExcelComWrapper.xml
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.vbprojAssemblyReference.cache
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.vbproj.ResolveComReference.cache
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.Resources.resources
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.vbproj.GenerateResource.cache
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.vbproj.CoreCompileInputs.cache
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.dll
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.xml
+C:\hirai\misc\ExcelComWrapper\ExcelComWrapper\obj\Debug\ExcelComWrapper.pdb

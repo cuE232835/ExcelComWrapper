@@ -1,0 +1,263 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ExcelComWrapper
+</name>
+</assembly>
+<members>
+<member name="T:ExcelComWrapper.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ExcelComWrapper.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ExcelComWrapper.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:ExcelComWrapper.Excel.Application.m_colCom">
+ <summary>COMオブジェクトディクショナリ(発番済みID検索用)</summary>
+</member>
+<member name="F:ExcelComWrapper.Excel.Application.m_colComR">
+ <summary>COMオブジェクトディクショナリ(ID発番済みオブジェクト検索用)</summary>
+</member>
+<member name="M:ExcelComWrapper.Excel.Application.RegisterCom(System.Object@)">
+ ================================================================
+ <summary>
+ COMオブジェクトを登録します。
+ 登録済みオブジェクトの場合は発番済みのIDを返却します。
+ </summary>
+ <param name="ComObject">登録対象のCOMオブジェクト</param>
+ <returns></returns>
+ ================================================================
+</member>
+<member name="M:ExcelComWrapper.Excel.Application.GetCom``1(System.String)">
+ ================================================================
+ <summary>
+ 登録済みCOMオブジェクトをIDで検索します。
+ </summary>
+ <typeparam name="T">COMオブジェクトのタイプ</typeparam>
+ <param name="ObjectID">RegisterComにより発番したCOMオブジェクトID</param>
+ <returns></returns>
+ ================================================================
+</member>
+<member name="M:ExcelComWrapper.Excel.Application.ClearComPool">
+ ================================================================
+ <summary>
+ 登録済みCOMオブジェクトを一括して開放します。
+ </summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Application.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Application.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Areas.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Areas.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Border.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Border.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Borders.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Borders.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Font.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Font.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Interior.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Interior.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Range.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Range.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Sheets.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Sheets.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Workbook.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Workbook.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Workbooks.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Workbooks.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="P:ExcelComWrapper.Excel.Worksheet.ID">
+ ****************************************************************
+ <summary>COMオブジェクトID</summary>
+ ****************************************************************
+</member>
+<member name="P:ExcelComWrapper.Excel.Worksheet.COM">
+ ================================================================
+ <summary>COMオブジェクト</summary>
+ ================================================================
+</member>
+<member name="T:ExcelComWrapper.ExcelWrapper">
+ ****************************************************************
+ <summary>
+ ExcelCOM操作ユーティリティクラス
+ </summary>
+ ****************************************************************
+</member>
+<member name="F:ExcelComWrapper.ExcelWrapper.m_objSeqLock">
+ <summary>COMオブジェクトID発番用同期オブジェクト</summary>
+</member>
+<member name="F:ExcelComWrapper.ExcelWrapper.m_colComId">
+ <summary>COMオブジェクトID発番用ディクショナリ</summary>
+</member>
+<member name="F:ExcelComWrapper.ExcelWrapper.m_colApp">
+ <summary>生成済みアプリケーションのリスト</summary>
+</member>
+<member name="M:ExcelComWrapper.ExcelWrapper.CreateInstance(System.Boolean)">
+ ****************************************************************
+ <summary>
+ Excelの新しいインスタンスを起動します。
+ </summary>
+ <param name="Visible">アプリケーションのウィンドウを表示するにはTrueを指定します</param>
+ <returns>Exce.Applicationオブジェクト</returns>
+ ****************************************************************
+</member>
+<member name="M:ExcelComWrapper.ExcelWrapper.CreateInstance(System.String,System.Boolean,System.Boolean)">
+ ****************************************************************
+ <summary>
+ オープンするファイルを指定してExcelの新しいインスタンスを起動します。
+ </summary>
+ <param name="File">オープンするファイルのパスを指定します</param>
+ <param name="[ReadOnly]">読み取り専用としてファイルを開くにはTrueを指定します</param>
+ <param name="Visible">アプリケーションのウィンドウを表示するにはTrueを指定します</param>
+ <returns>Exce.Applicationオブジェクト</returns>
+ ****************************************************************
+</member>
+<member name="M:ExcelComWrapper.ExcelWrapper.GetNewId">
+ ================================================================
+ <summary>
+ COMオブジェクト用に新しいIDを発番します。
+ IDは毎秒最大999,999,999まで発番可能ですがそれだけのオブジェクトを
+ 保持するためのメモリ管理は行わないのでご注意ください。
+ </summary>
+ <returns>COMオブジェクトID</returns>
+ ================================================================
+</member>
+<member name="M:ExcelComWrapper.ExcelWrapper.ReleaseComObject(System.Object[])">
+ ================================================================
+ <summary>
+ COMオブジェクトを開放します。
+ ※通常はオブジェクトを登録して使いまわすので最後にまとめて開放しますが、
+ 処理の中でやむを得ずCOMオブジェクトを所有してしまった場合は個別の開放
+ してください。
+ </summary>
+ <param name="ComObject"></param>
+ ================================================================
+</member>
+<member name="M:ExcelComWrapper.ExcelWrapper.Quit(ExcelComWrapper.Excel.Application@)">
+ ================================================================
+ <summary>
+ Excel終了時にアプリケーションオブジェクトをリストから削除するために呼び出します。
+ </summary>
+ <param name="Application"></param>
+ ================================================================
+</member>
+<member name="T:ExcelComWrapper.ExcelWrapper.Address">
+ ================================================================
+ <summary>
+ Rangeオブジェクトのアドレスを行/列・開始/終了の要素に分解します。
+ Rangeに複数の範囲が含まれる場合は正しく分解できないのでご注意ください。
+ </summary>
+ ================================================================
+</member>
+<member name="M:ExcelComWrapper.ExcelWrapper.Address.SplitColAndRow(System.String,System.Int32)">
+ ----------------------------------------------------------------
+ <summary>
+ 要素に分解します。
+ </summary>
+ <param name="AddressElement"></param>
+ <param name="Index"></param>
+ ----------------------------------------------------------------
+</member>
+<member name="P:ExcelComWrapper.ExcelWrapper.Address.StartColumn">
+ <summary>開始列名</summary>
+</member>
+<member name="P:ExcelComWrapper.ExcelWrapper.Address.StartRow">
+ <summary>開始列インデックス</summary>
+</member>
+<member name="P:ExcelComWrapper.ExcelWrapper.Address.EndColumn">
+ <summary>終了列名</summary>
+</member>
+<member name="P:ExcelComWrapper.ExcelWrapper.Address.EndRow">
+ <summary>終了列インデックス</summary>
+</member>
+</members>
+</doc>

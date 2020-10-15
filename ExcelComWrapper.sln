@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExcelComWrapper", "ExcelComWrapper\ExcelComWrapper.vbproj", "{EF2ED2B8-BC58-4729-8B38-58E1D38C8F7E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SampleApp", "SampleApp\SampleApp.vbproj", "{F4B766DE-01D7-4F02-8973-A176C4E9E28F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF2ED2B8-BC58-4729-8B38-58E1D38C8F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2ED2B8-BC58-4729-8B38-58E1D38C8F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2ED2B8-BC58-4729-8B38-58E1D38C8F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2ED2B8-BC58-4729-8B38-58E1D38C8F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B766DE-01D7-4F02-8973-A176C4E9E28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B766DE-01D7-4F02-8973-A176C4E9E28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B766DE-01D7-4F02-8973-A176C4E9E28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B766DE-01D7-4F02-8973-A176C4E9E28F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5BB2CD7-E7DE-4DB7-AE2E-E49EE704F1AF}
+	EndGlobalSection
+EndGlobal
